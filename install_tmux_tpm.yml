@@ -1,0 +1,12 @@
+---
+- name: Install tmux tpm
+  hosts: localhost
+
+  tasks:
+    - name: Instal tmux tpm from github
+      ansible.builtin.git:
+        repo: 'https://github.com/tmux-plugins/tpm'
+        dest: ~/.tmux/plugins/tmp
+        version: master
+        force: yes
+
