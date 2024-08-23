@@ -1,0 +1,6 @@
+---
+- name: Setup development environment
+  hosts: localhost
+  roles:
+    - role: stow
+    - role: tmux

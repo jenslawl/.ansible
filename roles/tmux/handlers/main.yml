@@ -1,0 +1,8 @@
+---
+- name: Source tmux configuration
+  command: tmux source-file ~/.tmux.conf
+  ignore_errors: yes
+
+- name: Install plugins
+  command: ~/.tmux/plugins/tpm/bin/install_plugins
+  ignore_errors: yes

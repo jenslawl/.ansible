@@ -1,0 +1,13 @@
+---
+- name: Install Stow on Debian/Ubuntu
+  become: yes
+  apt:
+    name: stow
+    state: present
+  when: ansible_facts['distribution'] == "Debian" or ansible_facts['distribution'] == "Ubuntu"
+
+- name: Install Stow on macOS
+  homebrew:
+    name: stow
+    state: present
+  when: ansible_facts['os_family'] == "Darwin"
