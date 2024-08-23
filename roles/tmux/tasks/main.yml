@@ -27,6 +27,8 @@
   command: stow tmux
   args:
     chdir: ~/.dotfiles
-  notify: Reload tmux
+  notify:
+    - Source configuration
+    - Install plugins
 
 

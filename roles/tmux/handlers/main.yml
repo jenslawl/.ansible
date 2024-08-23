@@ -1,5 +1,5 @@
 ---
-- name: Source tmux configuration
+- name: Source configuration
   command: tmux source-file ~/.tmux.conf
   ignore_errors: yes
 
