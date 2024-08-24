@@ -1,0 +1,6 @@
+---
+- name: Clone or Update .dotfiles
+  git:
+    repo: https://github.com/jenslawl/.dotfiles.git
+    dest: ~/.dotfiles
+    update: yes

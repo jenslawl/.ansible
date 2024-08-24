@@ -1,2 +1,19 @@
 ---
 ansible_python_interpreter: python3
+required_packages:
+  - git
+  - curl
+  - fzf
+  - ripgrep
+  - jq
+  - tldr
+  - xclip
+  - tldr
+  - build-essential
+  - make
+  - cmake
+  - clang
+  - ninja-build
+  - gettext
+  - unzip
+

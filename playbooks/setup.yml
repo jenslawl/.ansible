@@ -2,5 +2,8 @@
 - name: Setup development environment
   hosts: localhost
   roles:
+    - role: packages
+    - role: dotfiles
     - role: stow
+    - role: nvim
     - role: tmux

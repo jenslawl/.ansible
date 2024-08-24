@@ -1,0 +1,18 @@
+---
+- name: Ensure Homebrew is tapped for fonts (macOS)
+  homebrew_tap:
+    name: homebrew/cask-fonts
+    state: present
+  when: ansible_facts['os_family'] == "Darwin"
+
+- name: Install Fira Mono Nerd Font on macOS
+  homebrew_cask:
+    name: font-fira-mono-nerd-font
+    state: present
+  when: ansible_facts['os_family'] == "Darwin"
+
+- name: Install Fira Mono Nerd Font on Debian-based Linux
+  apt:
+    name: fonts-firacode
+    state: present
+  when: ansible_facts['os_family'] == "Debian"
