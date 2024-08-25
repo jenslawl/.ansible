@@ -26,6 +26,6 @@
     removes: /usr/bin/nvim  # Only create the symlink if it doesn't already exist
 
 - name: Stow neovim configuation
-  command: stow neovim
+  command: stow nvim
   args:
     chdir: ~/.dotfiles

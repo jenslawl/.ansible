@@ -4,6 +4,6 @@
   roles:
     - role: packages
     - role: dotfiles
-    - role: stow
     - role: nvim
     - role: tmux
+    - role: fonts

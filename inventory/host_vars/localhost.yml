@@ -1,6 +1,7 @@
 ---
 ansible_python_interpreter: python3
 required_packages:
+  - stow
   - git
   - curl
   - fzf
